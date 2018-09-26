@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="galegone.css" type="text/css"?>
+<svg id="svg_Wheel" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="2000" width="2000" viewBox="0 0 461.94 461.94">
+	<path id="svg_Tips" style="fill:var(--ColorBackDial)" d="M380.97 230.97c0 110-100 210-160 220 55.4-50.623 31.607-71.34 10-70m-150-150c0-110 100-210 160-220-55.4 50.623-31.607 71.34-10 70"/>
+
+<clipPath id="activeClip"><circle style="fill:var(--ColorMainDial);" cx="230.97" cy="230.971" r="150"/> </clipPath>
+
+<g id="svg_Wheel_Border">
+	<circle style="fill:var(--ColorMainDial);" cx="230.97" cy="230.971" r="150"/>
+	<circle cx="230.97" cy="230.971" r="150" fill="var(--ColorDialHover)" mask="url(#maskSlices)"/>
+
+<mask id="maskSlices">
+	<path id="Slice_Mask_0" d="M167.188 76.99h127.57L230.97 230.97z"/>
+	<path id="Slice_Mask_4" d="M326.64 461.94H135.3l95.67-230.97z"/>
+	<path id="Slice_Mask_2" d="M461.94 135.3v191.34l-230.97-95.67z"/>
+	<path id="Slice_Mask_6" d="M0 326.64V135.3l230.97 95.67z"/>
+	<path id="Slice_Mask_7" d="M0 135.3L135.3 0l95.67 230.97z"/>
+	<path id="Slice_Mask_1" d="M461.94 135.3L326.64 0l-95.67 230.97z"/>
+	<path id="Slice_Mask_5" d="M135.3 461.94l95.67-230.97L0 326.64l135.3 135.3"/>
+	<path id="Slice_Mask_3" d="M461.94 326.64l-135.3 135.3-95.67-230.97z"/>
+</mask>
+
+<a xlink:href="/index.html" target="_top">
+<g id="Storm_Slice_0">
+	<path class="svg_Wheel_slice" d="M167.314 77.292l127.648-.302-63.992 153.98z"/>
+	<text class="wheelText" y="109.758" x="229.798">Home</text>
+</g></a>
+<a xlink:href="/portfolio.html" target="_top"><g id="Storm_Slice_1">
+	<path class="svg_Wheel_slice" d="M294.626 77.292L385.1 167.34l-154.13 63.63z"/>
+	<text class="wheelText" y="-120.187" x="324.185" transform="rotate(45)">Portfolio</text>
+</g></a>
+<a xlink:href="/resume.html" target="_top"><g id="Storm_Slice_2">
+	<path class="svg_Wheel_slice" d="M384.648 167.313l.302 127.648-153.98-63.99z"/>
+	<text class="wheelText" y="-351.957" x="230.998" transform="rotate(90)">Resume</text>
+</g></a>
+<a xlink:href="https://github.com/ceruulean" target="_top"><g id="Storm_Slice_3">
+	<path class="svg_Wheel_slice" d="M384.648 294.626L294.6 385.1l-63.63-154.13z"/>
+	<text class="wheelText" y="-447.128" x="0.031" transform="rotate(135)">GitHub</text>
+</g></a>
+<a xlink:href="http://galeceru.tumblr.com/" target="_top"><g id="Storm_Slice_4">
+	<path class="svg_Wheel_slice" d="M294.626 384.647l-127.648.302 63.992-153.98z"/>
+	<text class="wheelText" y="-351.956" x="-230.985" transform="scale(-1)">Blog</text>
+</g></a>
+<a xlink:href="/affiliates.html" target="_top"><g id="Storm_Slice_5">
+	<path class="svg_Wheel_slice" d="M167.314 384.647L76.84 294.6l154.13-63.63z"/>
+	<text class="wheelText" y="-119.97" x="-324.292" transform="rotate(-135)">Affiliates</text>
+</g></a>
+<a xlink:href="/contact.html" target="_top"><g id="Storm_Slice_6">
+	<path class="svg_Wheel_slice" d="M77.292 294.625l-.302-127.648 153.98 63.992z"/>
+	<text class="wheelText" y="109.983" x="-230.357" transform="rotate(-90)">Contact</text>
+</g></a>
+<a xlink:href="/about.html" target="_top"><g id="Storm_Slice_7">
+	<path class="svg_Wheel_slice" d="M77.292 167.313L167.34 76.84l63.63 154.13z"/>
+	<text class="wheelText" y="204.829" x="0.028" transform="rotate(-45)">About</text>
+</g></a>
+</g>
+	<circle id="svg_Lens" fill="url(#glassgradient)" cx="230.97" cy="230.97" r="105"/>
+
+	
+  <defs>
+    <linearGradient id="glassgradient" x1="30%" y1="0%" x2="90%" y2="70%">
+      <stop offset="10%" style="stop-color:rgb(232, 243, 247);stop-opacity:1" />
+      <stop offset="30%" style="stop-color:rgb(204, 227, 232);stop-opacity:1" />
+      <stop offset="58%" style="stop-color:rgb(249, 253, 255);stop-opacity:1" />
+      <stop offset="65%" style="stop-color:rgb(232, 243, 247);stop-opacity:1" />
+      <stop offset="72%" style="stop-color:rgb(249, 253, 255);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgb(204, 227, 232);stop-opacity:1" />
+    </linearGradient>
+  </defs>
+</svg>

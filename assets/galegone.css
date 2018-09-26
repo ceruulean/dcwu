@@ -1,0 +1,488 @@
+:root{
+--ColorBody:rgb(81, 111, 153);
+--ColorMainContent:rgb(51, 55, 73);
+--ColorMainDial:#595959;
+--ColorBackDial:#459fc6;
+--ColorDialAct:#e06355;
+--ColorDialHover:rgba(255, 255, 255,0.3);
+--ColorText:rgba(198, 216, 244,1);
+--ColorTextHov:#fff;
+--ColorTextAct:#ff9a8e;
+--sizeText:20px;
+}
+
+body {position:relative;
+background-color:var(--ColorBody);
+color:rgba(255,255,255,0.7);
+font-family:Verdana, sans-serif;
+margin:0;
+padding:0;
+    overflow: hidden;
+}
+
+a {color:var(--ColorBackDial);}
+a:hover, a:active{color:var(--ColorDialAct);}
+
+/* Google Font: "Voltaire". latin */
+@font-face {
+  font-family: 'Voltaire';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Voltaire'), url(https://fonts.gstatic.com/s/voltaire/v7/1Pttg8PcRfSblAvGvTovaqQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+h1, h2{text-align:center;
+}
+
+#NavToggle{
+position:fixed;
+top:1em;
+left:1em;
+z-index:11;}
+
+#Nav{padding-top:1vh;
+overflow:hidden;
+float:left;
+flex-grow: 1;
+max-width:50%;
+z-index:10;
+}
+
+#obj_GaleGoneWheel{
+max-height:98vh;
+max-width:100%;
+}
+
+#Main{position:relative;
+height:100vh;
+	background:var(--ColorMainContent);
+flex-grow:1;
+}
+
+
+
+.ContentBG {
+	width:100%;
+	overflow: auto;
+	background:var(--ColorMainContent);
+	max-height:100vh;
+
+}
+
+
+#Content{padding:2em 1em 1em 3em;
+background:var(--ColorMainContent);
+max-width:60em;
+}
+
+
+svg {
+/* Prevent the drag prompt appearing when clicking on svg */
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+   -ms-user-select: none;
+	user-select: none;
+}
+/* svg Wheel Classes */
+
+#svg_Wheel_Border{
+transform-origin: 50% 50%;
+}
+
+.svg_Wheel_slice{
+pointer-events:all;
+/*
+  -ms-transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%; 
+  -moz-transform-origin: 50% 50%;
+transform-origin: 50% 50%;
+*/
+/*fill-opacity:0.646;*/
+}
+
+.active text{fill:var(--ColorTextHov);}
+.active path{fill:var(--ColorDialAct);
+clip-path:url(#activeClip);}
+
+.svg_Wheel_slice{fill:none;}
+
+.svg_Wheel_slice:hover ~ text{fill:var(--ColorTextHov);
+}
+
+text:hover{fill:var(--ColorTextHov);}
+
+.svg_Wheel_slice:active ~ text{fill:(var--ColorTextAct);}
+text:active{fill:var(--ColorTextAct);}
+
+.wheelText{ cursor:pointer;
+fill:var(--ColorText);
+pointer-events: auto;
+ text-anchor:middle;
+ text-align:center;
+font-family: "Voltaire", "Trebuchet MS", Helvetica, sans-serif;
+text-transform:uppercase;
+font-size:var(--sizeText);
+text-shadow:1px 1px 1px rgba(255,255,255,0.8), -1px -1px 2px rgba(0,0,0,0.8);
+    }
+
+
+
+#svg_Wheel{
+
+-webkit-filter: drop-shadow( -10px 7px 5px rgba(0,0,0,0.6));
+filter: drop-shadow( -10px 7px 5px rgba(0,0,0,0.6));
+}
+
+#svg_Wheel path{cursor:pointer;
+-ms-transform-origin: 50% 50%;
+-webkit-transform-origin: 50% 50%; 
+-moz-transform-origin: 50% 50%;
+transform-origin: 50% 50%;
+}
+
+svg circle{cursor:pointer;}
+
+/*add to body with javascript to prevent mobile scrolling behavior when dragging the wheel*/
+.lock-screen {
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+    position: fixed;
+}
+
+.NavToggleHide{
+	animation: kfNavToggleHide 0.5s linear;
+	 animation-fill-mode: forwards;
+	/*
+		-o-animation-name:bounce_fountainG;
+		-ms-animation-name:bounce_fountainG;
+		-webkit-animation-name:bounce_fountainG;
+		-moz-animation-name:kfNavToggle 0.5s;	*/
+}
+
+.NavToggleShow{
+	animation: kfNavToggleShow 0.5s linear;
+	 animation-fill-mode: forwards;
+}
+
+@keyframes kfNavToggleHide{
+	0%{width:auto;}
+30%{width:40vw;}
+50%{width:20vw;}
+80%{transform:translate(0, -50%) scale(0.2);}
+	100%{transform:translate(0, -100%) scale(0);
+	width:20vw;}
+}
+
+@keyframes kfNavToggleShow{
+	0%{transform: translate(0, -100%) scale(0);
+	width:20vw;}
+30%{transform: translate(0, -50%) scale(0.2);}
+50%{width:20vw;}
+80%{width:40vw;}
+	100%{width:auto;}
+}
+
+/*________________________________________________________________________________________ 
+*         Media Breakpoints
+*_________________________________________________________________________________________
+ */
+
+@media screen and (min-aspect-ratio: 8/5) {
+     /* laptop and tablet display */
+
+body > div{display:flex;
+
+    flex-direction: row;
+    flex-wrap:nowrap;
+}
+
+#Nav{
+max-width:100%;
+}
+
+}
+
+body > div{display:flex;
+justify-content: space-between;
+    align-items:flex-start;
+}
+
+@media screen and (orientation:portrait){
+
+}
+
+@media screen and (min-width: 1025px) {
+     /* start of large tablet styles */
+.ContentBG:before{content:"";
+	background:transparent;
+position:absolute;
+left:-50vw;
+top:-20vh;
+height:120vh;
+width:50vw;
+border-top-right-radius:100% 1000%;
+box-shadow:5vw -5vw 0px 5vw var(--ColorMainContent);
+z-index:-10;
+}
+
+}
+
+@media screen and (max-width: 1024px) {
+     /* start of medium tablet styles */
+
+#Nav{
+max-width:100%;
+width:100%;
+float:none;
+position:fixed;
+height:100%;
+
+}
+
+.NavToggleHide{
+	animation: kfNavToggleHideM 1s ease-out;
+	 animation-fill-mode: forwards;
+	/*
+		-o-animation-name:bounce_fountainG;
+		-ms-animation-name:bounce_fountainG;
+		-webkit-animation-name:bounce_fountainG;
+		-moz-animation-name:kfNavToggle 0.5s;	*/
+}
+
+.NavToggleShow{
+	animation: kfNavToggleShowM 1s ease-out;
+	 animation-fill-mode: forwards;
+}
+
+@keyframes kfNavToggleHideM{
+	0%{background-color:rgba(255,255,255,0.7);}
+	40%{transform:translate(0, 0);background-color:rgba(255,255,255,0);}
+100%{background-color:rgba(255,255,255,0);transform:translate(0, -100%);}
+}
+
+@keyframes kfNavToggleShowM{
+	0%{background-color:rgba(255,255,255,0);transform:translate(0, -100%);}
+	60%{background-color:rgba(255,255,255,0); transform: translate(0, 0);}
+100%{background-color:rgba(255,255,255,0.7);}
+
+}
+
+#obj_GaleGoneWheel{
+margin:auto auto;
+}
+}
+
+@media screen and (max-width: 479px) {
+     /* start of phone styles */
+
+}
+
+@media screen and (max-height: 479px) {
+     /* horizontal phone layout */
+
+
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+/* IE10+ CSS styles go here */
+
+body{
+	background-color:rgb(81, 111, 153);
+	z-index:100;
+}
+
+body:after{content:"Please use a modern browser.";
+height:100%;
+width:100%;
+
+}
+
+}
+
+
+/*________________________________________________________________________________________ 
+Loading Animated Icon (super long)
+__________________________________________________________________________________________
+ */
+#fountainG{
+	position:relative;
+	width:228px;
+	height:28px;
+	margin:40vh auto 0 auto;
+}
+
+.fountainG{
+	position:absolute;
+	top:0;
+	background-color:var(--ColorDialHover);
+	width:28px;
+	height:28px;
+	animation-name:bounce_fountainG;
+		-o-animation-name:bounce_fountainG;
+		-ms-animation-name:bounce_fountainG;
+		-webkit-animation-name:bounce_fountainG;
+		-moz-animation-name:bounce_fountainG;
+	animation-duration:1.165s;
+		-o-animation-duration:1.165s;
+		-ms-animation-duration:1.165s;
+		-webkit-animation-duration:1.165s;
+		-moz-animation-duration:1.165s;
+	animation-iteration-count:infinite;
+		-o-animation-iteration-count:infinite;
+		-ms-animation-iteration-count:infinite;
+		-webkit-animation-iteration-count:infinite;
+		-moz-animation-iteration-count:infinite;
+	animation-direction:normal;
+		-o-animation-direction:normal;
+		-ms-animation-direction:normal;
+		-webkit-animation-direction:normal;
+		-moz-animation-direction:normal;
+	transform:scale(.3);
+		-o-transform:scale(.3);
+		-ms-transform:scale(.3);
+		-webkit-transform:scale(.3);
+		-moz-transform:scale(.3);
+	border-radius:18px;
+		-o-border-radius:18px;
+		-ms-border-radius:18px;
+		-webkit-border-radius:18px;
+		-moz-border-radius:18px;
+}
+
+#fountainG_1{
+	left:0;
+	animation-delay:0.466s;
+		-o-animation-delay:0.466s;
+		-ms-animation-delay:0.466s;
+		-webkit-animation-delay:0.466s;
+		-moz-animation-delay:0.466s;
+}
+
+#fountainG_2{
+	left:28px;
+	animation-delay:0.5825s;
+		-o-animation-delay:0.5825s;
+		-ms-animation-delay:0.5825s;
+		-webkit-animation-delay:0.5825s;
+		-moz-animation-delay:0.5825s;
+}
+
+#fountainG_3{
+	left:57px;
+	animation-delay:0.699s;
+		-o-animation-delay:0.699s;
+		-ms-animation-delay:0.699s;
+		-webkit-animation-delay:0.699s;
+		-moz-animation-delay:0.699s;
+}
+
+#fountainG_4{
+	left:85px;
+	animation-delay:0.8155s;
+		-o-animation-delay:0.8155s;
+		-ms-animation-delay:0.8155s;
+		-webkit-animation-delay:0.8155s;
+		-moz-animation-delay:0.8155s;
+}
+
+#fountainG_5{
+	left:114px;
+	animation-delay:0.932s;
+		-o-animation-delay:0.932s;
+		-ms-animation-delay:0.932s;
+		-webkit-animation-delay:0.932s;
+		-moz-animation-delay:0.932s;
+}
+
+#fountainG_6{
+	left:142px;
+	animation-delay:1.0485s;
+		-o-animation-delay:1.0485s;
+		-ms-animation-delay:1.0485s;
+		-webkit-animation-delay:1.0485s;
+		-moz-animation-delay:1.0485s;
+}
+
+#fountainG_7{
+	left:171px;
+	animation-delay:1.165s;
+		-o-animation-delay:1.165s;
+		-ms-animation-delay:1.165s;
+		-webkit-animation-delay:1.165s;
+		-moz-animation-delay:1.165s;
+}
+
+#fountainG_8{
+	left:199px;
+	animation-delay:1.2915s;
+		-o-animation-delay:1.2915s;
+		-ms-animation-delay:1.2915s;
+		-webkit-animation-delay:1.2915s;
+		-moz-animation-delay:1.2915s;
+}
+
+
+
+@keyframes bounce_fountainG{
+	0%{
+	transform:scale(1);
+		background-color:var(--ColorBackDial);
+	}
+
+	100%{
+	transform:scale(.3);
+		background-color:var(--ColorTextHov);
+	}
+}
+
+@-o-keyframes bounce_fountainG{
+	0%{
+	-o-transform:scale(1);
+		background-color:var(--ColorBackDial);
+	}
+
+	100%{
+	-o-transform:scale(.3);
+		background-color:var(--ColorTextHov);
+	}
+}
+
+@-ms-keyframes bounce_fountainG{
+	0%{
+	-ms-transform:scale(1);
+		background-color:var(--ColorBackDial);
+	}
+
+	100%{
+	-ms-transform:scale(.3);
+		background-color:var(--ColorTextHov);
+	}
+}
+
+@-webkit-keyframes bounce_fountainG{
+	0%{
+	-webkit-transform:scale(1);
+		background-color:var(--ColorBackDial);
+	}
+
+	100%{
+	-webkit-transform:scale(.3);
+		background-color:var(--ColorTextHov);
+	}
+}
+
+@-moz-keyframes bounce_fountainG{
+	0%{
+	-moz-transform:scale(1);
+		background-color:var(--ColorBackDial);
+	}
+
+	100%{
+	-moz-transform:scale(.3);
+		background-color:var(--ColorTextHov);
+	}
+}

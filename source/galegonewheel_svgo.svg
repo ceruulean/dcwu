@@ -1,0 +1,212 @@
+<svg id="svg_Wheel" xmlns="http://www.w3.org/2000/svg" height="2000" width="2000" viewBox="0 0 461.94 461.94">
+  <style>
+    /* <![CDATA[ */
+:root{
+--ColorMainDial:#595959;
+--ColorBackDial:#459fc6;
+--ColorDialAct:#e06355;
+--ColorDialHover:rgba(255, 255, 255,0.3);
+--ColorText:rgba(198, 216, 244,1);
+--ColorTextHov:#fff;
+--ColorTextAct:#ff9a8e;
+
+--sizeText:20px;
+}
+
+@font-face {
+  font-family: 'Voltaire';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Voltaire'), url(https://fonts.gstatic.com/s/voltaire/v7/1Pttg8PcRfSblAvGvTovaqQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+#svg_Wheel_Border{
+transform-origin: 50% 50%;
+}
+
+.svg_Wheel_slice{
+pointer-events:all;
+/*
+  -ms-transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%; 
+  -moz-transform-origin: 50% 50%;
+transform-origin: 50% 50%;
+*/
+/*fill-opacity:0.646;*/
+}
+
+.active text{fill:var(--ColorTextHov);}
+.active path{fill:var(--ColorDialAct);
+clip-path:url(#activeClip);}
+
+.svg_Wheel_slice{fill:none;}
+
+.svg_Wheel_slice:hover ~ text{fill:var(--ColorTextHov);
+}
+
+text:hover{fill:var(--ColorTextHov);}
+
+.svg_Wheel_slice:active ~ text{fill:(var--ColorTextAct);}
+text:active{fill:var(--ColorTextAct);}
+
+.wheelText{ cursor:pointer;
+fill:var(--ColorText);
+pointer-events: auto;
+ text-anchor:middle;
+ text-align:center;
+font-family: "Voltaire", "Trebuchet MS", Helvetica, sans-serif;
+text-transform:uppercase;
+font-size:var(--sizeText);
+text-shadow:1px 1px 1px rgba(255,255,255,0.8), -1px -1px 2px rgba(0,0,0,0.8);
+    }
+
+
+
+svg{
+/* Prevent the drag prompt appearing when using the wheel */
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+   -ms-user-select: none;
+	user-select: none;
+
+-webkit-filter: drop-shadow( -10px 7px 5px rgba(0,0,0,0.6));
+filter: drop-shadow( -10px 7px 5px rgba(0,0,0,0.6));
+}
+
+svg path{cursor:pointer;
+-ms-transform-origin: 50% 50%;
+-webkit-transform-origin: 50% 50%; 
+-moz-transform-origin: 50% 50%;
+transform-origin: 50% 50%;
+}
+
+svg circle{cursor:pointer;}
+    /* ]]> */
+  </style>
+	<path id="svg_Tips" style="fill:var(--ColorBackDial)" d="M380.97 230.97c0 110-100 210-160 220 55.4-50.623 31.607-71.34 10-70m-150-150c0-110 100-210 160-220-55.4 50.623-31.607 71.34-10 70"/>
+
+<clipPath id="activeClip"><circle style="fill:var(--ColorMainDial);" cx="230.97" cy="230.971" r="150"/> </clipPath>
+
+<g id="svg_Wheel_Border">
+	<circle style="fill:var(--ColorMainDial);" cx="230.97" cy="230.971" r="150"/>
+	<circle cx="230.97" cy="230.971" r="150" fill="var(--ColorDialHover)" mask="url(#maskSlices)"/>
+
+<mask id="maskSlices">
+	<path id="Slice_Mask_0" d="M167.188 76.99h127.57L230.97 230.97z"/>
+	<path id="Slice_Mask_4" d="M326.64 461.94H135.3l95.67-230.97z"/>
+	<path id="Slice_Mask_2" d="M461.94 135.3v191.34l-230.97-95.67z"/>
+	<path id="Slice_Mask_6" d="M0 326.64V135.3l230.97 95.67z"/>
+	<path id="Slice_Mask_7" d="M0 135.3L135.3 0l95.67 230.97z"/>
+	<path id="Slice_Mask_1" d="M461.94 135.3L326.64 0l-95.67 230.97z"/>
+	<path id="Slice_Mask_5" d="M135.3 461.94l95.67-230.97L0 326.64l135.3 135.3"/>
+	<path id="Slice_Mask_3" d="M461.94 326.64l-135.3 135.3-95.67-230.97z"/>
+</mask>
+
+<g id="Storm_Slice_0">
+	<path class="svg_Wheel_slice" d="M167.314 77.292l127.648-.302-63.992 153.98z"/>
+	<text class="wheelText" y="109.758" x="229.798">Home</text>
+</g>
+<g id="Storm_Slice_1">
+	<path id="Storm_Slice_1" class="svg_Wheel_slice" d="M294.626 77.292L385.1 167.34l-154.13 63.63z"/>
+	<text class="wheelText" y="-120.187" x="324.185" transform="rotate(45)">Portfolio</text>
+</g>
+<g id="Storm_Slice_2">
+	<path id="Storm_Slice_2" class="svg_Wheel_slice" d="M384.648 167.313l.302 127.648-153.98-63.99z"/>
+	<text class="wheelText" y="-351.957" x="230.998" transform="rotate(90)">Resume</text>
+</g>
+<g id="Storm_Slice_3">
+	<path id="Storm_Slice_3" class="svg_Wheel_slice" d="M384.648 294.626L294.6 385.1l-63.63-154.13z"/>
+	<text class="wheelText" y="-447.128" x="0.031" transform="rotate(135)">Freebies</text>
+</g>
+<g id="Storm_Slice_4">
+	<path id="Storm_Slice_4" class="svg_Wheel_slice" d="M294.626 384.647l-127.648.302 63.992-153.98z"/>
+	<text class="wheelText" y="-351.956" x="-230.985" transform="scale(-1)">Blog</text>
+</g>
+<g id="Storm_Slice_5">
+	<path id="Storm_Slice_5" class="svg_Wheel_slice" d="M167.314 384.647L76.84 294.6l154.13-63.63z"/>
+	<text class="wheelText" y="-119.97" x="-324.292" transform="rotate(-135)">Affiliates</text>
+</g>
+<g id="Storm_Slice_6">
+	<path id="Storm_Slice_6" class="svg_Wheel_slice" d="M77.292 294.625l-.302-127.648 153.98 63.992z"/>
+	<text class="wheelText" y="109.983" x="-230.357" transform="rotate(-90)">Contact</text>
+</g>
+<g id="Storm_Slice_7">
+	<path id="Storm_Slice_7" class="svg_Wheel_slice" d="M77.292 167.313L167.34 76.84l63.63 154.13z"/>
+	<text class="wheelText" y="204.829" x="0.028" transform="rotate(-45)">About</text>
+</g>
+</g>
+	<circle id="svg_Lens" style="fill:#ffffff;stroke-width:1.02797198" cx="230.97" cy="230.97" r="105"/>
+
+<script type="text/javascript">
+    // <![CDATA[
+
+	
+	
+window.onload = function() {
+Init();
+}
+
+var Slices = [];
+var Slice_Masks = [];
+
+function Init(){ //Init slice array
+for(var i=0; i<8; ++i){
+	Slices.push(document.getElementById("Storm_Slice_"+i)); //Assuming a strict naming scheme, starting with 0
+	Slice_Masks.push(document.getElementById("Slice_Mask_"+i));
+// adding event listeners
+
+Slices[i].addEventListener("mouseover", SliceMaskOver({maskSlice:Slice_Masks[i], ind:i}), false);
+Slices[i].addEventListener("mouseout", SliceMaskOut({maskSlice:Slice_Masks[i], ind:i}), false);
+Slices[i].addEventListener("click", SliceClick({ind:i}), false);
+	}
+
+}
+
+function SliceClick(event){
+return function() {
+	var x = event.ind;
+	for (var ii=0; ii<8; ++ii) {Slices[ii].setAttribute("class", "");
+		Slice_Masks[ii].style.fill = "#000";};
+
+	Slices[x].setAttribute("class", "active")
+	Slice_Masks[x].setAttribute("id", "activeID");
+	Slice_Masks[x].style.fill = "#fff";
+//	alert("active");
+}}
+
+function SliceMaskOver(event){
+var i = event.ind;
+
+return function() {
+
+if (Slices[i].getAttribute("class") == "active"){
+//alert(i);
+return;
+}
+
+	event.maskSlice.style.fill = "#fff";
+//maskSlice.setAttribute("fill", "#fff");
+//alert(event.i);
+	}
+}
+
+function SliceMaskOut(event){
+var i = event.ind;
+
+return function() {
+
+if (Slices[i].getAttribute("class") == "active"){
+//alert(i);
+return;
+}
+
+	event.maskSlice.style.fill = "#000";
+	}
+}
+
+   // ]]>
+  </script>
+</svg>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg_Wheel"
+   height="462"
+   width="462"
+   viewBox="0 0 461.94 461.94"
+   version="1.1"
+   sodipodi:docname="galegonewheel_inkscape.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <metadata
+     id="metadata4626">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs4624" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     id="namedview4622"
+     showgrid="true"
+     inkscape:zoom="1.2978929"
+     inkscape:cx="-7.8743571"
+     inkscape:cy="186.90142"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg_Wheel_slices"
+     inkscape:object-paths="true"
+     inkscape:snap-grids="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid8648" />
+  </sodipodi:namedview>
+  <path
+     style="fill:#00b1ff"
+     inkscape:connector-curvature="0"
+     d="m 380.97,230.97 c 0,110 -100,210 -160,220 55.401,-50.623 31.607,-71.339 10,-70 m -150,-150 c 0,-110 100,-210 160,-220 -55.401,50.623 -31.607,71.339 -10,70"
+     id="svg_Wheel_Border" />
+  <circle
+     style="fill:#777777;stroke-width:0.91662002"
+     id="circle4574"
+     cx="230.96962"
+     cy="230.97054"
+     r="150.00029" />
+  <circle
+     style="fill:#ffffff;fill-opacity:0.68300003;stroke-width:1.02797198"
+     id="circle4576"
+     cx="230.97044"
+     cy="230.97041"
+     r="105.00014" />
+  <g
+     id="svg_Wheel_slices">
+    <path
+       style="fill:#e83f46;fill-opacity:0.64600004"
+       inkscape:connector-curvature="0"
+       id="path4580"
+       d="M 167.31436,77.291843 294.96169,76.99 230.97,230.97 Z"
+       sodipodi:nodetypes="cccc" />
+    <text
+       id="text4582"
+       class="wheelText"
+       y="109.75778"
+       x="229.79813"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Segoe MDL2 Assets';-inkscape-font-specification:'Segoe MDL2 Assets';text-anchor:middle;text-align:center;">Home</text>
+    <path
+       style="fill:#0000ff;fill-opacity:1;stroke-width:1"
+       inkscape:connector-curvature="0"
+       id="path4580-4-0"
+       d="M 384.64815,167.31336 384.95,294.96069 230.97,230.969 Z"
+       sodipodi:nodetypes="cccc" />
+    <text
+       id="text4602"
+       class="wheelText"
+       y="-351.95654"
+       x="228.99782"
+       transform="rotate(90)"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Segoe MDL2 Assets';-inkscape-font-specification:'Segoe MDL2 Assets';text-anchor:middle;text-align:center;">Resume</text>
+    <path
+       style="fill:#c8edff;fill-opacity:0.64600004;stroke-width:1"
+       inkscape:connector-curvature="0"
+       id="path4580-9-7-2"
+       d="M 77.291843,294.62463 76.990009,166.9773 230.97,230.969 Z"
+       sodipodi:nodetypes="cccc" />
+    <text
+       id="text4607"
+       class="wheelText"
+       y="109.98337"
+       x="-233.35721"
+       transform="rotate(-90)"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Segoe MDL2 Assets';-inkscape-font-specification:'Segoe MDL2 Assets';text-anchor:middle;text-align:center;">Contact</text>
+    <path
+       style="fill:#c80000;fill-opacity:0.64600003;stroke-width:1"
+       inkscape:connector-curvature="0"
+       id="path4580-9"
+       d="M 294.62564,384.64716 166.97831,384.949 230.97,230.969 Z"
+       sodipodi:nodetypes="cccc" />
+    <text
+       id="text4612"
+       class="wheelText"
+       y="-351.95557"
+       x="-235.98471"
+       transform="scale(-1)"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Segoe MDL2 Assets';-inkscape-font-specification:'Segoe MDL2 Assets';text-anchor:middle;text-align:center;">Blog</text>
+    <path
+       style="fill:#00e82a;fill-opacity:1;stroke-width:1"
+       inkscape:connector-curvature="0"
+       id="path4580-4"
+       d="M 294.62553,77.291804 385.09926,167.33866 230.97,230.97 Z"
+       sodipodi:nodetypes="cccc" />
+    <text
+       id="text4617"
+       class="wheelText"
+       y="-125.1869"
+       x="324.18488"
+       transform="rotate(45)"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Segoe MDL2 Assets';-inkscape-font-specification:'Segoe MDL2 Assets';text-anchor:middle;text-align:center;">Portfolio</text>
+    <path
+       style="fill:#00edff;fill-opacity:0.64600003;stroke-width:1"
+       inkscape:connector-curvature="0"
+       id="path4580-9-7-2-8"
+       d="M 77.291809,167.31346 167.33867,76.83974 230.97,230.969 Z"
+       sodipodi:nodetypes="cccc" />
+    <text
+       id="text4587"
+       class="wheelText"
+       y="202.82887"
+       x="-4.0282898"
+       transform="rotate(-45)"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Segoe MDL2 Assets';-inkscape-font-specification:'Segoe MDL2 Assets';text-anchor:middle;text-align:center;">About</text>
+    <path
+       style="fill:#fa00ff;fill-opacity:1;stroke-width:1"
+       inkscape:connector-curvature="0"
+       id="path4580-4-0-1"
+       d="M 384.64821,294.62552 294.60135,385.09925 230.97,230.97 Z"
+       sodipodi:nodetypes="cccc" />
+    <text
+       id="text4597"
+       class="wheelText"
+       y="-449.1279"
+       x="-2.0310307"
+       transform="rotate(135)"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Segoe MDL2 Assets';-inkscape-font-specification:'Segoe MDL2 Assets';text-anchor:middle;text-align:center;">Freebies</text>
+    <path
+       style="fill:#c8e400;fill-opacity:0.64600003;stroke-width:1"
+       inkscape:connector-curvature="0"
+       id="path4580-9-7"
+       d="M 167.31446,384.64719 76.84074,294.60033 230.97,230.969 Z"
+       sodipodi:nodetypes="cccc" />
+    <text
+       id="text4592"
+       class="wheelText"
+       y="-121.97015"
+       x="-321.29239"
+       transform="rotate(-135)"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Segoe MDL2 Assets';-inkscape-font-specification:'Segoe MDL2 Assets';text-anchor:middle;text-align:center;">Affiliates</text>
+  </g>
+</svg>
